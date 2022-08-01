@@ -1,0 +1,481 @@
+sentence_number;design_decision;classification;alternative_classification
+1;0;-;-
+2;0;-;-
+3;0;-;-
+4;1;framework;-
+5;0;-;-
+6;0;-;-
+7;1;tool;-
+8;0;-;-
+9;0;-;-
+10;0;-;-
+11;0;-;-
+12;0;-;-
+13;0;-;-
+14;0;-;-
+15;0;-;-
+16;0;-;-
+17;0;-;-
+18;0;-;-
+19;0;-;-
+20;0;-;-
+21;0;-;-
+22;0;-;-
+23;0;-;-
+24;0;-;-
+25;0;-;-
+26;0;-;-
+27;0;-;-
+28;0;-;-
+29;0;-;-
+30;0;-;-
+31;0;-;-
+32;0;-;-
+33;0;-;-
+34;0;-;-
+35;0;-;-
+36;0;-;-
+37;0;-;-
+38;0;-;-
+39;0;-;-
+40;0;-;-
+41;1;platform;function
+42;1;framework;-
+43;1;platform;framework
+44;1;messaging;function
+45;0;-;-
+46;1;messaging;association
+47;1;design rule;messaging
+48;1;function;association
+49;0;-;-
+50;1;association;-
+51;0;-;-
+52;1;data base;framework
+53;1;framework;-
+54;1;framework;-
+55;1;function;-
+56;1;function;architectural style
+57;1;framework;-
+58;1;function;framework
+59;1;function;-
+60;1;framework;algorithm
+61;1;association;-
+62;1;design rule;-
+63;0;-;-
+64;1;design rule;-
+65;1;design rule;-
+66;0;-;-
+67;0;-;-
+68;0;-;-
+69;1;function;-
+70;1;function;-
+71;0;-;-
+72;0;-;-
+73;1;function;-
+74;1;function;-
+75;1;function;-
+76;1;function;-
+77;0;-;-
+78;0;-;-
+79;0;-;-
+80;0;-;-
+81;1;function;-
+82;1;function;-
+83;0;-;-
+84;1;function;messaging
+85;1;function;-
+86;1;function;association
+87;1;association;-
+88;0;-;-
+89;0;-;-
+90;0;-;-
+91;0;-;-
+92;0;-;-
+93;0;-;-
+94;0;-;-
+95;0;-;-
+96;1;organizational/process-related;-
+97;1;association;function
+98;0;-;-
+99;0;-;-
+100;0;-;-
+101;0;-;-
+102;1;messaging;-
+103;0;-;-
+104;0;-;-
+105;1;association;-
+106;1;user interface;function
+107;0;-;-
+108;1;api;function
+109;0;-;-
+110;1;messaging;-
+111;1;api;function
+112;1;function;-
+113;1;design rule;-
+114;1;function;-
+115;1;design rule;-
+116;1;function;-
+117;1;messaging;-
+118;1;function;-
+119;1;messaging;association
+120;1;association;function
+121;1;function;-
+122;1;data base;-
+123;1;design rule;-
+124;1;function;-
+125;0;-;-
+126;0;-;-
+127;0;-;-
+128;0;-;-
+129;1;design rule;api
+130;0;-;-
+131;0;-;-
+132;0;-;-
+133;1;association;-
+134;0;-;-
+135;0;-;-
+136;1;user interface;-
+137;1;function;-
+138;0;-;-
+139;1;function;-
+140;1;function;-
+141;1;association;-
+142;1;design rule;-
+143;1;function;data base
+144;0;-;-
+145;0;-;-
+146;0;-;-
+147;1;design rule;-
+148;1;messaging;function
+149;1;organizational/process-related;-
+150;1;design rule;-
+151;0;-;-
+152;1;design rule;-
+153;0;-;-
+154;1;user interface;-
+155;1;user interface;-
+156;0;-;-
+157;0;-;-
+158;0;-;-
+159;0;-;-
+160;0;-;-
+161;0;-;-
+162;0;-;-
+163;1;function;framework
+164;1;design rule;-
+165;1;design rule;-
+166;1;function;-
+167;1;function;framework
+168;0;-;-
+169;0;-;-
+170;0;-;-
+171;1;function;-
+172;1;design rule;-
+173;1;design rule;-
+174;0;-;-
+175;1;messaging;-
+176;1;function;-
+177;1;association;-
+178;1;function;association
+179;0;-;-
+180;0;-;-
+181;0;-;-
+182;0;-;-
+183;0;-;-
+184;1;architectural style;-
+185;0;-;-
+186;1;function;-
+187;1;function;-
+188;1;function;data base
+189;1;function;-
+190;1;function;platform
+191;1;association;-
+192;1;association;-
+193;1;association;-
+194;1;association;-
+195;1;function;-
+196;1;function;-
+197;1;function;data file
+198;1;function;data file
+199;1;api;-
+200;1;function;-
+201;1;function;-
+202;1;api;-
+203;1;function;-
+204;0;-;-
+205;0;-;-
+206;0;-;-
+207;0;-;-
+208;0;-;-
+209;0;-;-
+210;0;-;-
+211;0;-;-
+212;0;-;-
+213;0;-;-
+214;1;messaging;-
+215;1;design rule;-
+216;1;design rule;-
+217;1;design rule;-
+218;0;-;-
+219;1;design rule;-
+220;0;-;-
+221;0;-;-
+222;1;design rule;function
+223;1;design rule;function
+224;1;design rule;function
+225;0;-;-
+226;0;-;-
+227;1;function;-
+228;0;-;-
+229;0;-;-
+230;0;-;-
+231;0;-;-
+232;0;-;-
+233;0;-;-
+234;1;function;-
+235;1;messaging;-
+236;1;function;-
+237;0;-;-
+238;1;api;-
+239;0;-;-
+240;1;api;-
+241;1;association;-
+242;1;association;-
+243;1;framework;-
+244;1;association;-
+245;1;association;-
+246;1;association;-
+247;0;-;-
+248;1;function;-
+249;1;messaging;-
+250;1;platform;-
+251;1;platform;-
+252;0;-;-
+253;1;algorithm;function
+254;1;guideline;-
+255;0;-;-
+256;0;-;-
+257;0;-;-
+258;0;-;-
+259;0;-;-
+260;1;api;-
+261;1;function;-
+262;0;-;-
+263;0;-;-
+264;0;-;-
+265;0;-;-
+266;0;-;-
+267;1;design rule;-
+268;1;design rule;function
+269;1;design rule;function
+270;1;design rule;function
+271;1;association;-
+272;0;-;-
+273;0;-;-
+274;0;-;-
+275;1;platform;-
+276;1;platform;-
+277;1;api;-
+278;1;platform;-
+279;1;platform;-
+280;1;platform;-
+281;0;-;-
+282;0;-;-
+283;0;-;-
+284;1;design rule;-
+285;1;messaging;-
+286;0;-;-
+287;0;-;-
+288;0;-;-
+289;0;-;-
+290;0;-;-
+291;1;function;relation
+292;1;data file;function
+293;1;data file;-
+294;1;design rule;-
+295;0;-;-
+296;0;-;-
+297;0;-;-
+298;1;framework;-
+299;0;-;-
+300;1;association;-
+301;1;relation;-
+302;1;association;-
+303;1;association;-
+304;1;association;-
+305;1;association;-
+306;0;-;-
+307;1;relation;-
+308;0;-;-
+309;1;platform;-
+310;0;-;-
+311;0;-;-
+312;0;-;-
+313;0;-;-
+314;0;-;-
+315;1;framework;integration
+316;1;integration;-
+317;0;-;-
+318;0;-;-
+319;0;-;-
+320;1;design rule;-
+321;1;function;-
+322;1;design rule;-
+323;0;-;-
+324;0;-;-
+325;0;-;-
+326;0;-;-
+327;0;-;-
+328;1;data file;-
+329;1;association;-
+330;1;function;-
+331;1;function;-
+332;1;function;-
+333;1;association;-
+334;0;-;-
+335;1;framework;-
+336;1;function;-
+337;1;function;-
+338;1;function;-
+339;1;function;-
+340;1;function;-
+341;0;-;-
+342;1;function;-
+343;1;data file;-
+344;1;function;-
+345;1;function;-
+346;1;framework;-
+347;1;api;-
+348;1;api;-
+349;1;function;-
+350;0;-;-
+351;0;-;-
+352;0;-;-
+353;1;association;-
+354;1;association;-
+355;1;association;-
+356;1;component;-
+357;0;-;-
+358;0;-;-
+359;0;-;-
+360;1;platform;-
+361;1;design rule;-
+362;1;function;-
+363;0;-;-
+364;0;-;-
+365;1;api;-
+366;0;-;-
+367;0;-;-
+368;1;function;-
+369;1;function;-
+370;1;function;-
+371;0;-;-
+372;0;-;-
+373;0;-;-
+374;0;-;-
+375;0;-;-
+376;1;design rule;-
+377;1;design rule;-
+378;1;design rule;-
+379;0;-;-
+380;0;-;-
+381;0;-;-
+382;0;-;-
+383;0;-;-
+384;1;platform;-
+385;1;platform;-
+386;1;design rule;-
+387;0;-;-
+388;0;-;-
+389;0;-;-
+390;1;design rule;-
+391;1;platform;-
+392;1;platform;-
+393;1;platform;-
+394;0;-;-
+395;0;-;-
+396;0;-;-
+397;0;-;-
+398;1;platform;-
+399;0;-;-
+400;0;-;-
+401;1;design rule;-
+402;0;-;-
+403;1;framework;-
+404;0;-;-
+405;0;-;-
+406;1;framework;-
+407;1;data base;-
+408;1;design rule;-
+409;1;platform;-
+410;0;-;-
+411;0;-;-
+412;0;-;-
+413;1;platform;-
+414;0;-;-
+415;0;-;-
+416;0;-;-
+417;0;-;-
+418;0;-;-
+419;0;-;-
+420;0;-;-
+421;0;-;-
+422;1;design rule;-
+423;1;design rule;-
+424;1;messaging;-
+425;0;-;-
+426;0;-;-
+427;1;messaging;-
+428;1;data base;-
+429;0;-;-
+430;0;-;-
+431;0;-;-
+432;0;-;-
+433;0;-;-
+434;1;design rule;-
+435;1;design rule;association
+436;1;association;-
+437;1;relation;-
+438;0;-;-
+439;0;-;-
+440;0;-;-
+441;0;-;-
+442;0;-;-
+443;0;-;-
+444;0;-;-
+445;1;messaging;-
+446;0;-;-
+447;0;-;-
+448;0;-;-
+449;0;-;-
+450;0;-;-
+451;0;-;-
+452;0;-;-
+453;0;-;-
+454;0;-;-
+455;0;-;-
+456;0;-;-
+457;1;design rule;-
+458;0;-;-
+459;0;-;-
+460;0;-;-
+461;1;function;-
+462;0;-;-
+463;0;-;-
+464;1;function;-
+465;0;-;-
+466;0;-;-
+467;1;function;-
+468;1;design rule;-
+469;0;-;-
+470;1;component;-
+471;1;design rule;-
+472;1;design rule;-
+473;1;function;-
+474;0;-;-
+475;1;platform;-
+476;1;platform;-
+477;1;platform;-
+478;0;-;-
+479;0;-;-
+480;0;-;-

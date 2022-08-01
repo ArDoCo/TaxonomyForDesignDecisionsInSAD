@@ -1,0 +1,24 @@
+MunkeyIssues Architecture
+General Architecture
+Overview
+The application architecture for MunkeyIssues is being implemented with a microservices approach. 
+Instead of creating a single monolithic application, the application is broken down into small independent standalone services that implement very specific functionality. 
+This should hopefully ease maintenance in the long run since a change to one microservice should rarely affect any other microservice in the system.
+In order to maintain loose-coupling between the various services in the application, all communication between the various microservices is accomplished by sending messages across a service bus. 
+In order to be as flexible as possible, two different messaging patterns are being utilized. 
+For cases where an immediate response to a message is needed, the request/response pattern can be utilized. 
+This is very useful for things like CRUD operations where a service may need to send a message to retrieve some piece of data. 
+For cases where a response isn't necessary, the more traditional pub/sub approach can be utilized.
+Outside consumers of the microservices use an API Gateway in order to interact with the microservices. 
+Currently the API Gateway exposes a RESTful Web API for communicating with the microservices and provides authentication of external users.
+Currently the only consumer planned is an HTML5 frontend using Aurelia although it should be simple to support more consumers (like mobile) in the future. 
+The HTML5 frontend will receive real-time updates from the server by using an event dispatcher implemented using SignalR. 
+More documentation about the event dispatcher will be written in the future.
+
+Technology Stack
+    Frontend: Aurelia+HTML5
+    API Gateway: ASP.NET Web API
+    Service Bus: MassTransit
+    Microservices: TopShelf
+    Message Queue: RabbitMQ
+    Data Persistence: Entity Framework

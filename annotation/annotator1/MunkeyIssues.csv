@@ -1,0 +1,25 @@
+sentence_number;design_decision;classification;alternative_classification
+1;0;-;-
+2;0;-;-
+3;0;-;-
+4;1;architectural style;-
+5;1;architectural style;-
+6;1;architectural style;-
+7;1;messaging;architectural style
+8;1;messaging;-
+9;1;architectural pattern;messaging
+10;1;messaging;-
+11;1;architectural pattern;-
+12;1;api;-
+13;1;architectural style;api
+14;1;framework;user interface
+15;1;integration;component
+16;0;-;-
+17;0;-;-
+18;0;-;-
+19;1;framework;user interface
+20;1;api;-
+21;1;messaging;architectural style
+22;1;architectural style;-
+23;1;platform;messaging
+24;1;framework;-

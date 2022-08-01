@@ -1,0 +1,55 @@
+Architecture
+Suggestion
+we decided NOT to use hazelcast - so you have to ignore it when reading the description below
+directory node
+    java application with the play framework and a rest api
+        makes creating a rest api easy
+        everyone knows java
+        integrated webserver (no tomcat or war deployments)
+        can be easily packaged into a *.deb package
+    uses hazelcast as an in-memory grid
+        hazelcast allows us to create a shared memory between the directory and all chain nodes
+        it has automatic node discovery for EC2
+            upon startup each chain node simply adds it own public key to the data grid
+        it supports failover scenarios
+        it scales well
+        we can easily exchange the public keys and find out which nodes are available
+        java usage is trivial: you get a simple Map<S, T> object to exchange data between clients (other collection classes are also available)
+    provision new VMs via the amazon API
+        after a machine has been created, we need to install the chain node software (see below)
+        I would suggest using ansible (http://www.ansible.com/home) for this
+            works over ssh
+            you can write bash scripts
+    rest resources
+        get-chain
+        get-available-nodes
+
+chain nodes:
+    also a java application with play and rest
+        also use hazelcast
+        use bouncycastle to generate keys and put them into hazelcast
+        logging can also be done via hazelcast (=> centralized logging)
+    rest resources
+        post-request (request is the name of the resource; return a future with the answer)
+
+client:
+    java with play and rest
+        access directory rest-resources
+        use bouncycastle for encryption
+        web UI to visualize the result - probably provide a jsonapi (http://jsonapi.org/) for this and write a small SPA in javascript
+
+quote service:
+    since it's so trivial and doesn't do anything with encryption (which is where I would avoid using a different library in our solution - i.e. all application that encrypt something should do so with the same library) we can use anything we want
+    either also use java with play or a nodejs server (it's like ~20 LOC in node)
+
+a case for the play framework
+    everyone knows java
+    easy deployments
+    well supported in IDEs (especially intellij IDEA - which is free for students)
+    integrated boilerplates
+    check out a short introduction
+    if you change java code, you just need to reload the browser to see the changes
+    IMHO easier to grasp than spring or JSF/Java EE applications
+        less state in the application server
+    integrated app-server and support for NIO
+    easy to learn templating langauge (@manuel you can also use groovy templating ^^)

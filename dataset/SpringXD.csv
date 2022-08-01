@@ -1,0 +1,114 @@
+sentence_number;design_decision;classification;alternative_classification
+1;0;-;-
+2;1;platform;-
+3;0;-;-
+4;0;-;-
+5;0;-;-
+6;1;platform;-
+7;1;platform;-
+8;1;platform;-
+9;1;platform;-
+10;0;-;-
+11;0;-;-
+12;1;component;-
+13;1;api;platform
+14;1;component;-
+15;1;component;-
+16;1;platform;-
+17;1;component;-
+18;1;platform;-
+19;0;-;-
+20;0;-;-
+21;1;platform;-
+22;0;-;-
+23;1;function;relation
+24;1;function;-
+25;1;component;-
+26;0;-;-
+27;0;-;-
+28;1;platform;-
+29;1;platform;-
+30;0;-;-
+31;0;-;-
+32;1;platform;-
+33;1;messaging;api
+34;0;-;-
+35;0;-;-
+36;1;api;platform
+37;1;architectural pattern;integration
+38;1;messaging;relation
+39;0;-;-
+40;0;-;-
+41;1;component;-
+42;1;function;-
+43;1;function;-
+44;1;function;algorithm
+45;1;function;-
+46;1;architectural style;-
+47;1;function;-
+48;0;-;-
+49;0;-;-
+50;1;reference architecture;component
+51;1;reference architecture;-
+52;0;-;-
+53;1;component;-
+54;1;messaging;-
+55;1;messaging;-
+56;1;messaging;-
+57;1;messaging;programming language
+58;1;programming language;-
+59;1;programming language;-
+60;0;-;-
+61;0;-;-
+62;1;architectural pattern;-
+63;1;component;-
+64;0;-;-
+65;1;messaging;architectural pattern
+66;1;messaging;-
+67;0;-;-
+68;1;api;reference architecture
+69;1;function;messaging
+70;1;data base;-
+71;1;api;-
+72;0;-;-
+73;1;api;-
+74;0;-;-
+75;1;reference architecture;organizational/process-related
+76;1;class;-
+77;1;class;-
+78;1;class;-
+79;1;function;-
+80;1;function;-
+81;0;-;-
+82;0;-;-
+83;1;function;-
+84;1;function;-
+85;1;function;messaging
+86;1;component;-
+87;1;component;-
+88;1;function;-
+89;0;-;-
+90;0;-;-
+91;0;-;-
+92;1;function;-
+93;1;function;-
+94;1;data file;-
+95;1;component;-
+96;0;-;-
+97;0;-;-
+98;1;component;-
+99;1;function;-
+100;0;-;-
+101;1;platform;-
+102;0;-;-
+103;1;messaging;relation
+104;1;component;platform
+105;0;-;-
+106;0;-;-
+107;1;organizational/process-related;-
+108;1;organizational/process-related;-
+109;0;-;-
+110;0;-;-
+111;1;function;-
+112;1;function;-
+113;0;-;-

@@ -1,0 +1,17 @@
+sentence_number;design_decision;classification;alternative_classification
+1;1;architectural style;-
+2;1;component;-
+3;1;component;-
+4;1;component;data base
+5;1;user interface;programming language
+6;1;data base;-
+7;1;interface;-
+8;1;component;-
+9;1;component;-
+10;1;component;-
+11;1;component;-
+12;1;programming language;function
+13;1;function;-
+14;1;function;-
+15;1;architectural pattern;programming language
+16;1;user interface;-

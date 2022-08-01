@@ -1,0 +1,120 @@
+QMiner provides and integration of NoSQL-like storage backend with machine learning algorithms. 
+The integration allows for sharing of resources between analytics and storage layers, reducing the redundancy in data structure. 
+For example, free-text index and vector-space model can share the pre-processing (tokenization, normalization, etc.) and vocabulary, result in lower memory footprint and lower latency when operating on streaming data.
+
+QMiner architecture consists of several layers:
+
+![alt text](arch.png).
+
+The data is located at the bottom of the architecture diagram, and is stored either externally (e.g. in a database) or internally. 
+Data Layer accesses the data through adapters, which must expose the data sources through a predefined interface. 
+Data Layer provides efficient access to the data by indexing the records, and providing means to sample given a distribution over the records. 
+Analytics layer provides support to define and construct feature vectors out of records and implements several machine learning algorithms, which can be applied to them. 
+All implemented algorithms leverage the support provided by Data Layer. 
+The system can be accessed via JavaScript API, located in the top layer.
+
+The system is fully developed in C++, and can run on Linux or Windows.
+
+## Data Layer
+
+The basic Data Layer abstractions are similar to databases. 
+The data is organized around stores (tables). 
+One data point inside a store corresponds to a record (row or instance) and one record consists of one or more fields (columns or features). 
+An application can have more stores. 
+Each record is assigned a unique 64 bit ID. 
+The store is required to implement fast retrieval of records using the ID, preferably in constant time. 
+
+Example store:
+
+![alt text](store.png)
+
+The data can be stored in external database, or internally in QMiner. 
+When data is stored externally, a C++ adapter needs to be written, which exposed in accordance with the above abstraction. 
+When data is stored internally, data schema needs to be defined, which declares the stores, fields and their types. 
+Details on how schema is defined and what data types it supports are given in [Store Definition](Store-definition)
+
+Data Layer provides support for indexing and retrieving records. 
+Currently, the system contains several indices:
+ - **Inverted Index** - used to index discrete values and free text; provides support for document tokenization and word normalization.
+ - **Geospatial Index** – which can be used to index geographic locations presented as longitude and latitude pairs.
+
+There are several additional indices in implementation at the moment, which will extend the system:
+ - **B-tree** – used to index linearly ordered data types, such as number and dates; the main benefit of tree structure is in answering range queries
+ - **Local Proximity Hashing** – used to answer nearest neighbour queries on high-dimensional data such as sparse vectors.
+
+Indices can be accessed directly through a JSon-based query languages, detailed in the following Chapter. 
+The indices are also used by Analytics layer for various tasks, such as describing and extracting features, and for sampling.
+
+## Analytics Layer
+
+Analytics layer provides tools and algorithms for doing various analytics tasks, which can be composed together using JavaScript API. 
+They can be grouped into several functionality areas: aggregates, feature extractors, and machine learning and data mining algorithms.
+
+### Aggregates
+
+Aggregates correspond to algorithms which can take a set of records (or a stream), and produce (or maintain) some aggregate statistics of the set (or a stream). 
+There are two types of aggregates: batch and stream. 
+Batch aggregates can be applied to a static set of records, and produce a one-time result. 
+Stream aggregates can connect to a store, and update their state as new records are added to the store.
+
+QMiner contains the following batch aggregates:
+ - **Histogram** – computes a histogram over a numeric field, and provides some basic statistics (mean, median, minimum, maximum, standard deviation)
+ - **Count** – computes a distribution over a discrete field (e.g. string, integer); it can leverage inverted index over a field when available for faster computation
+ - **Keywords** – computes top keywords using TFIDF weighting schema over a text field
+ - **Timeline** – computes distribution over a date-time field
+ - **Document Atlas** – computes Document Atlas[2] visualization over a text field
+
+QMiner contains the following stream aggregates, which work online on a data stream:
+ - **Counting** – number of records in a given time window
+ - **Numeric** – computes basic statistics of a numeric stream (mean, median, minimum, maximum, standard deviation)
+ - **Item** – counts occurrences of items (e.g. keywords or categories)
+ - **Exponential Moving Average** – moving average with exponential decay
+
+### Feature Extractors
+
+Feature extractors are one of the core elements in QMiner. 
+They can take a record, and transform it into a sparse feature vector. 
+Feature vectors can either be consumed outside QMiner by the application, or internally using aggregators and machine learning algorithms. 
+This abstraction enables support for both structured and unstructured data. 
+Figure 3 shows an implementation of a typical machine learning scenario in QMiner.
+
+Typical learning pipeline in QMiner:
+
+![alt text](ftrext.png)
+
+There are two types of feature extractors. 
+The primary feature extractor provides feature vector directly. 
+Secondary feature extractors can combine the outputs of several primary or secondary feature extractors.
+
+QMiner contains the following primary feature extractors:
+ - **Numeric** – requires numeric field, returns its normalized value
+ - **Categorical** – requires discrete field (e.g. string, date), returns a sparse vector of dimensionality equal to the range of the field, with the element corresponding to the actual value of the field set to 1
+ - **Multinomial** – requires discrete field (e.g. string, vector of strings), returns sparse vector of dimensionality equal to the range of the field, with the elements corresponding to the actual values of the field set to 1
+ - **Bag-of-words** – require text field, returns a bag-of-words sparse vector using TFIDF weighting schema
+ - **Random** – returns a random number
+
+QMiner contains the following secondary feature extractors:
+ - **Join** – applies given feature extractor to a set of records which are obtained using a join
+ - **Pair** – applies a pair of feature extractors to a record, and does a Cartesian product on their outputs
+
+### Machine Learning
+
+Machine learning algorithms take in the input feature vectors extracted with Feature Extractors. 
+The output depends on the specific algorithm and its implementation. 
+The implementation can learn in batch or streaming scenarios, however current implementations mostly focus on batch mode learning and application in stream.
+
+The system contains several standard algorithms:
+ - **Support Vector Machine (SVM) classification, regression and ranking** – State-of-the-art algorithm for text classification. 
+	Works well with high-dimensional data and can be optimized for sparse vector representation. 
+	Implementation is based on stochastic gradient descent, which can take advantage of the sampling operations supported in QMiner. 
+	Ranking can be used to learn custom ranking function, example of which is used in cross-lingual news recommendation in the Bloomberg use-case. 
+	Currently only batch learning is supported and the resulting models can be serialized to disk for later reuse.
+ - **K-means clustering** – Standard unsupervised learning approach. 
+	The result is a collection of k sets of records, which are grouped based on the similarity of their extracted features. 
+	Currently supported measures are cosine (works well on high-dimensional data) and Euclid (works well on low-dimensional data).
+ - **Agglomerative clustering** – Unsupervised learning approach, which returns a dendrogram of records. 
+	It has high computational complexity (__O(n^2)__, where __n__ is the number of records). 
+	Current application area is to cluster geographic locations, for user-friendly display on the world map.
+ - **Hoeffding trees** – Decision trees learning algorithm optimized for stream processing (under development)
+ - **Active learning** – Semi-supervised learning used to train classification models from unlabelled data. 
+	The implementation is based on uncertainty sampling and SVM models. (to be integrated in JavaScript API)

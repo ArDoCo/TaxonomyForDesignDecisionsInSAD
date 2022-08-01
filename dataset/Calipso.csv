@@ -1,0 +1,34 @@
+sentence_number;design_decision;classification;alternative_classification
+1;0;-;-
+2;1;framework;data base
+3;1;architectural style;-
+4;1;component;architectural style
+5;1;data base;architectural style
+6;1;architectural style;-
+7;0;-;-
+8;0;-;-
+9;0;-;-
+10;1;design rule;-
+11;1;platform;integration
+12;1;platform;-
+13;1;guideline;-
+14;1;api;-
+15;1;data base;-
+16;1;data base;function
+17;1;data base;-
+18;1;data base;-
+19;1;platform;-
+20;0;-;-
+21;0;-;-
+22;0;-;-
+23;0;-;-
+24;1;component;programming language
+25;1;function;-
+26;1;data base;architectural pattern
+27;1;platform;-
+28;1;component;platform
+29;0;-;-
+30;0;-;-
+31;0;-;-
+32;1;platform;-
+33;0;-;-

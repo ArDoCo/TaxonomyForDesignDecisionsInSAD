@@ -1,0 +1,86 @@
+## Statistics
+
+- Beets
+	- Lines: 170
+	- "Empty" Lines: 67
+	- Sentences: 103
+
+- BIBINT
+	- Lines: 27
+	- "Empty" Lines: 5
+	- Sentences: 22
+
+- Calipso
+	- Lines: 33
+	- "Empty" Lines: 9
+	- Sentences: 24
+
+- CoronaWarnApp
+	- Lines: 480
+	- "Empty" Lines: 148
+	- Sentences: 332
+
+- IOSched
+	- Lines: 109
+	- "Empty" Lines: 52
+	- Sentences: 57
+
+- MunkeyIssues
+	- Lines: 24
+	- "Empty" Lines: 4
+	- Sentences: 20
+
+- MyTardis
+	- Lines: 159
+	- "Empty" Lines: 77
+	- Sentences: 82
+
+- OnionRouting
+	- Lines: 55
+	- "Empty" Lines: 5
+	- Sentences: 50
+
+- OpenRefine
+	- Lines: 26
+	- "Empty" Lines: 7
+	- Sentences: 19
+
+- QMiner
+	- Lines: 120
+	- "Empty" Lines: 31
+	- Sentences: 89
+
+- ROD
+	- Lines: 135
+	- "Empty" Lines: 16
+	- Sentences: 119
+
+- SCons
+	- Lines: 92
+	- "Empty" Lines: 14
+	- Sentences: 78
+
+- Spacewalk
+	- Lines: 45
+	- "Empty" Lines: 9
+	- Sentences: 36
+
+- SpringXD
+	- Lines: 113
+	- "Empty" Lines: 24
+	- Sentences: 89
+
+- tagm8vault
+	- Lines: 16
+	- "Empty" Lines: 0
+	- Sentences: 16
+
+- Teammates
+	- Lines: 342
+	- "Empty" Lines: 109
+	- Sentences: 233
+
+- ZenGarden
+	- Lines: 134
+	- "Empty" Lines: 25
+	- Sentences: 109

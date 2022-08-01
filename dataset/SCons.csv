@@ -1,0 +1,93 @@
+sentence_number;design_decision;classification;alternative_classification
+1;0;-;-
+2;1;component;-
+3;1;component;-
+4;1;component;-
+5;0;-;-
+6;0;-;-
+7;0;-;-
+8;1;inheritance;class
+9;0;-;-
+10;1;api;programming language
+11;1;design rule;programming language
+12;1;api;-
+13;1;relation;-
+14;1;api;programming language
+15;1;class;-
+16;1;association;-
+17;1;algorithm;-
+18;1;class;-
+19;1;association;-
+20;1;function;-
+21;1;class;-
+22;1;class;-
+23;1;class;-
+24;1;inheritance;-
+25;1;relation;inheritance
+26;1;data file;-
+27;0;-;-
+28;1;class;-
+29;1;function;-
+30;1;inheritance;-
+31;1;class;-
+32;1;function;class
+33;0;-;-
+34;0;-;-
+35;0;-;-
+36;0;-;-
+37;1;api;programming language
+38;1;programming language;-
+39;1;user interface;-
+40;0;-;-
+41;0;-;-
+42;0;-;-
+43;1;relation;-
+44;1;relation;-
+45;0;-;-
+46;0;-;-
+47;1;algorithm;-
+48;1;function;-
+49;1;algorithm;-
+50;0;-;-
+51;0;-;-
+52;0;-;-
+53;1;function;-
+54;0;-;-
+55;0;-;-
+56;0;-;-
+57;1;function;-
+58;1;function;-
+59;1;integration;-
+60;1;function;-
+61;1;function;-
+62;1;function;-
+63;0;-;-
+64;0;-;-
+65;1;programming language;api
+66;1;programming language;-
+67;1;user interface;-
+68;1;user interface;-
+69;0;-;-
+70;1;user interface;-
+71;1;api;user interface
+72;1;integration;-
+73;1;function;-
+74;1;algorithm;-
+75;1;function;-
+76;0;-;-
+77;0;-;-
+78;0;-;-
+79;1;api;-
+80;1;api;-
+81;1;api;function
+82;0;-;-
+83;1;class;-
+84;1;class;relation
+85;1;function;-
+86;0;-;-
+87;1;integration;-
+88;0;-;-
+89;0;-;-
+90;1;design rule;-
+91;1;user interface;-
+92;0;-;-

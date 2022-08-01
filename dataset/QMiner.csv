@@ -1,0 +1,121 @@
+sentence_number;design_decision;classification;alternative_classification
+1;1;data base;algorithm
+2;0;-;-
+3;1;algorithm;-
+4;0;-;-
+5;1;architectural style;-
+6;0;-;-
+7;0;-;-
+8;0;-;-
+9;1;component;data base
+10;1;architectural pattern;-
+11;1;function;-
+12;1;component;architectural style
+13;1;component;-
+14;1;api;-
+15;0;-;-
+16;1;programming language;platform
+17;0;-;-
+18;1;component;architectural style
+19;0;-;-
+20;1;component;architectural style
+21;1;class;-
+22;1;association;-
+23;1;association;-
+24;1;association;-
+25;1;function;-
+26;0;-;-
+27;0;-;-
+28;0;-;-
+29;0;-;-
+30;0;-;-
+31;1;data base;-
+32;1;architectural pattern;programming language
+33;1;class;-
+34;0;-;-
+35;0;-;-
+36;1;function;component
+37;1;function;-
+38;1;function;-
+39;1;function;-
+40;0;-;-
+41;1;function;-
+42;1;function;relation
+43;1;function;algorithm
+44;0;-;-
+45;1;api;-
+46;1;function;-
+47;0;-;-
+48;1;component;architectural style
+49;0;-;-
+50;1;function;api
+51;1;function;-
+52;0;-;-
+53;0;-;-
+54;0;-;-
+55;1;function;-
+56;1;function;-
+57;1;function;-
+58;1;function;-
+59;0;-;-
+60;0;-;-
+61;1;function;-
+62;1;function;-
+63;1;function;-
+64;1;function;-
+65;0;-;-
+66;0;-;-
+67;1;function;-
+68;1;function;-
+69;1;function;-
+70;1;function;-
+71;0;-;-
+72;0;-;-
+73;0;-;-
+74;0;-;-
+75;1;class;-
+76;1;function;-
+77;1;function;-
+78;1;class;-
+79;0;-;-
+80;0;-;-
+81;1;architectural pattern;-
+82;0;-;-
+83;0;-;-
+84;0;-;-
+85;1;inheritance;-
+86;1;class;-
+87;1;class;-
+88;0;-;-
+89;0;-;-
+90;1;function;-
+91;1;function;-
+92;1;function;-
+93;1;function;-
+94;1;function;-
+95;0;-;-
+96;0;-;-
+97;1;function;-
+98;1;function;-
+99;0;-;-
+100;0;-;-
+101;0;-;-
+102;1;algorithm;-
+103;1;algorithm;-
+104;1;algorithm;-
+105;0;-;-
+106;0;-;-
+107;1;algorithm;-
+108;1;algorithm;-
+109;1;algorithm;-
+110;1;algorithm;-
+111;1;algorithm;-
+112;1;algorithm;-
+113;1;algorithm;-
+114;1;algorithm;-
+115;1;algorithm;-
+116;1;algorithm;-
+117;1;algorithm;-
+118;1;algorithm;-
+119;1;algorithm;-
+120;1;algorithm;api

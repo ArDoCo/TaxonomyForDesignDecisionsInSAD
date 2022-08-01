@@ -1,0 +1,33 @@
+# Understanding the Architecture
+Calipso is at its heart an Express application (expressjs.org) backed by MongoDB. 
+In it's most basic mode it works as a two tier web application:
+	* Web Tier:  A NodeJS Application, run in either single or multi-core (cluster) mode.
+	* Storage Tier: MongoDB, used to store both content and session data.
+An example of the simplest, single server (e.g. EC2 or a VPS) deployment architecture is shown below:
+<img src="images/single_server.png" border="0">
+
+## Making It Scale
+Calipso scales very simply.
+Each core is effectively stateless for simple use cases (socket.io, scheduling are caveats!), you can spin up as many instances of it as you like.
+This can be done either using the included cluster mode (that allows you to specify the number of workers and also provides plugins to enable live monitoring), or via a manual process that brings up nodes as you require on as many servers as you need.
+Calipso is very fast, but it is not optimised for serving static content.
+For a large scale site it would be recommended to use a proxy load balancer in front of Calipso, that allows for serving of dynmaic content from a cookie-less domain (e.g. via nginx), or modify your theme to serve static content from a CDN such as Akamai, Amazon S3 or Limelight. 
+The back end storage for both content and sessions is stored in MongoDB, which can be sharded and scaled as required.
+For sites with a large amount of content you can control the sharding of content elements across MongoDB to optimise the performance of the site.
+You can use a different MongoDB instance for session storage and content / general data storage (or even switch to Redis for session storage given that it just uses the standard connect middleware).
+You could try storing static assets in GridFS, but I'm not sure how well that scales.
+In a large implementation it would be recommended to keep a separate set of running nodes to run the administrative functions.
+An example of a large scale implementation architecture is shown below:
+<img src="images/multiple_server.png" border="0">
+
+### Caveats
+Calipso needs to have modules added that allow for the minification and packaging of Javascript libraries, as well as CSS.
+Calipso needs to have functionality added that allow for dynamic modification of static file paths (e.g. re-writes that allow for publication of static content to CDN's transparently, but allow Calipso to act as an origin server for a CDN).
+Configuration is (currently) stored in a mixture of the filesystem and MongoDB, and in the current iteration any modifications to configuration are dealt with through the request / response cycle and hence will not be applied across nodes in a cluster automatically.
+On configuration change you will need to cycle each of the nodes one after the other to apply the configuration change (this will be fixed).
+The scheduler module currently runs across all nodes, and hence jobs will be triggered more than once in multi-cluster mode.
+This is an issue that needs to be fixed.
+
+## How Calip.so Runs
+calip.so itself runs on an incredibly simple single server model, with http-proxy (from nodejitsu) in front of it.
+One day it may have load requiring more than that, but even after the posting on read write web, when it got 15,000 hits in an hour, it was very un-stressed.

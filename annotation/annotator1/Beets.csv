@@ -1,0 +1,171 @@
+sentence_number;design_decision;classification;alternative_classification
+1;0;-;-
+2;0;-;-
+3;0;-;-
+4;0;-;-
+5;0;-;-
+6;0;-;-
+7;0;-;-
+8;0;-;-
+9;0;-;-
+10;0;-;-
+11;0;-;-
+12;0;-;-
+13;0;-;-
+14;0;-;-
+15;0;-;-
+16;0;-;-
+17;0;-;-
+18;0;-;-
+19;1;component;-
+20;1;integration;data base
+21;1;component;function
+22;1;component;-
+23;0;-;-
+24;1;data base;-
+25;1;integration;-
+26;0;-;-
+27;1;class;-
+28;1;class;-
+29;0;-;-
+30;1;class;-
+31;0;-;-
+32;1;architectural pattern;-
+33;1;architectural pattern;-
+34;0;-;-
+35;0;-;-
+36;0;-;-
+37;1;function;-
+38;1;function;-
+39;1;function;-
+40;1;function;-
+41;1;function;-
+42;1;function;-
+43;1;function;-
+44;1;function;-
+45;1;function;-
+46;0;-;-
+47;1;class;-
+48;1;class;-
+49;1;function;-
+50;0;-;-
+51;1;class;-
+52;0;-;-
+53;1;class;-
+54;0;-;-
+55;1;relation;class
+56;1;function;-
+57;1;function;-
+58;0;-;-
+59;1;function;-
+60;1;function;-
+61;1;function;relation
+62;1;component;-
+63;0;-;-
+64;1;association;-
+65;1;relation;-
+66;0;-;-
+67;1;association;-
+68;0;-;-
+69;0;-;-
+70;1;data base;class
+71;1;association;-
+72;0;-;-
+73;1;class;-
+74;0;-;-
+75;1;relation;-
+76;1;relation;-
+77;1;relation;-
+78;0;-;-
+79;1;association;class
+80;1;association;-
+81;1;association;-
+82;1;integration;-
+83;0;-;-
+84;1;association;-
+85;1;function;-
+86;1;function;-
+87;1;function;-
+88;0;-;-
+89;0;-;-
+90;0;-;-
+91;1;function;relation
+92;0;-;-
+93;1;relation;-
+94;1;function;relation
+95;1;function;association
+96;0;-;-
+97;1;class;-
+98;0;-;-
+99;1;class;-
+100;1;class;-
+101;1;inheritance;function
+102;0;-;-
+103;1;function;-
+104;0;-;-
+105;1;function;-
+106;1;function;-
+107;0;-;-
+108;1;inheritance;-
+109;1;inheritance;class
+110;1;inheritance;class
+111;0;-;-
+112;1;function;-
+113;1;function;class
+114;0;-;-
+115;0;-;-
+116;0;-;-
+117;1;algorithm;-
+118;1;algorithm;-
+119;1;algorithm;function
+120;1;function;-
+121;0;-;-
+122;0;-;-
+123;0;-;-
+124;0;-;-
+125;0;-;-
+126;0;-;-
+127;0;-;-
+128;0;-;-
+129;1;integration;-
+130;0;-;-
+131;0;-;-
+132;0;-;-
+133;1;association;-
+134;1;data file;-
+135;1;association;-
+136;0;-;-
+137;1;function;-
+138;1;function;-
+139;1;function;association
+140;1;function;association
+141;0;-;-
+142;0;-;-
+143;0;-;-
+144;1;function;-
+145;1;function;-
+146;1;function;-
+147;0;-;-
+148;0;-;-
+149;0;-;-
+150;0;-;-
+151;1;component;-
+152;0;-;-
+153;1;component;-
+154;1;user interface;function
+155;1;component;data file
+156;1;user interface;-
+157;0;-;-
+158;1;architectural pattern;-
+159;1;architectural pattern;programming language
+160;1;component;architectural pattern
+161;0;-;-
+162;1;architectural pattern;-
+163;0;-;-
+164;1;user interface;-
+165;0;-;-
+166;0;-;-
+167;1;user interface;component
+168;1;function;user interface
+169;1;integration;user interface
+170;1;component;-

@@ -1,0 +1,110 @@
+sentence_number;design_decision;classification;alternative_classification
+1;0;-;-
+2;0;-;-
+3;0;-;-
+4;0;-;-
+5;0;-;-
+6;0;-;-
+7;0;-;-
+8;0;-;-
+9;0;-;-
+10;0;-;-
+11;1;component;programming language
+12;1;design rule;-
+13;1;data base;-
+14;1;tool;-
+15;0;-;-
+16;0;-;-
+17;0;-;-
+18;1;platform;-
+19;0;-;-
+20;0;-;-
+21;1;platform;-
+22;0;-;-
+23;0;-;-
+24;0;-;-
+25;1;function;-
+26;1;function;-
+27;1;function;-
+28;0;-;-
+29;1;function;-
+30;0;-;-
+31;0;-;-
+32;0;-;-
+33;0;-;-
+34;0;-;-
+35;0;-;-
+36;1;programming language;tool
+37;1;tool;platform
+38;1;tool;-
+39;0;-;-
+40;0;-;-
+41;1;integration;guideline
+42;1;integration;-
+43;1;integration;user interface
+44;0;-;-
+45;1;architectural style;-
+46;0;-;-
+47;1;data base;-
+48;1;component;-
+49;0;-;-
+50;1;architectural style;-
+51;0;-;-
+52;0;-;-
+53;1;component;function
+54;0;-;-
+55;1;integration;data base
+56;0;-;-
+57;1;framework;-
+58;0;-;-
+59;1;integration;-
+60;1;integration;-
+61;1;function;-
+62;1;function;-
+63;0;-;-
+64;0;-;-
+65;0;-;-
+66;0;-;-
+67;0;-;-
+68;0;-;-
+69;0;-;-
+70;0;-;-
+71;0;-;-
+72;0;-;-
+73;0;-;-
+74;1;integration;-
+75;0;-;-
+76;0;-;-
+77;1;integration;-
+78;1;integration;-
+79;0;-;-
+80;0;-;-
+81;1;platform;-
+82;0;-;-
+83;1;data base;-
+84;1;data base;-
+85;1;data base;-
+86;1;data base;-
+87;1;data base;messaging
+88;1;data base;-
+89;0;-;-
+90;1;integration;api
+91;0;-;-
+92;0;-;-
+93;1;programming language;-
+94;1;programming language;integration
+95;0;-;-
+96;0;-;-
+97;0;-;-
+98;0;-;-
+99;1;programming language;-
+100;0;-;-
+101;0;-;-
+102;0;-;-
+103;0;-;-
+104;1;organizational/process-related;-
+105;0;-;-
+106;0;-;-
+107;0;-;-
+108;0;-;-
+109;0;-;-

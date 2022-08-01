@@ -1,0 +1,28 @@
+sentence_number;design_decision;classification;alternative_classification
+1;1;architectural style;-
+2;1;component;-
+3;0;-;-
+4;0;-;-
+5;1;architectural style;-
+6;1;component;-
+7;1;relation;-
+8;1;data file;-
+9;1;function;-
+10;1;function;-
+11;1;function;-
+12;0;-;-
+13;1;algorithm;-
+14;1;component;-
+15;0;-;-
+16;1;component;-
+17;1;relation;-
+18;0;-;-
+19;1;messaging;-
+20;1;component;-
+21;1;interface;data base
+22;0;-;-
+23;1;function;-
+24;1;component;-
+25;1;organizational/process-related;-
+26;1;user interface;-
+27;1;user interface;-

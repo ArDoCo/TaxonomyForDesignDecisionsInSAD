@@ -1,0 +1,16 @@
+The software implements a a classic 3 tiered architecture comprising:
+A Command Line interface
+A Semantic Engine
+A NoSQL database
+The Command Line interface connects remotely to the Semantic Engine exploiting Distributed Ruby (DRuby).
+MongoDB provides the NoSQL DB using MongoMapper as the intervening ODM abstraction where possible.
+MongoMapper doesn’t support self-referential many-to-many relationships so this part of the abstraction had to be added, but it is kept separate from the semantic engine.
+The Semantic Engine comprise 3 key sub components:
+A taxonomy manager supporting taxonomy and tag administration.
+A tagged record manager.
+A record query engine.
+Domain Specific Languages (DSL)s handle tag administration, record definition and query, leveraging the Ruby interpreter.
+For example, the query engine accepts Boolean algebra expressed in terms of tags which it converts to matching record sets before submitting to the Ruby interpreter for evaluation. 
+It’s a simple and effective solution for delivering a full featured semantically aware query facility.
+The Façade design pattern has been used to support an integrated command line server accessed via DRuby. 
+A corresponding DRuby command line client is provided exploiting GLI.

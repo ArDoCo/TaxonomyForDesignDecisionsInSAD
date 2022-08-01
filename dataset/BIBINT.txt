@@ -1,0 +1,27 @@
+The system should be constructed in a modular fashion via plugin mechanism in order to be easily modified in the future.
+There are two subsystem, the engine that runs in the background and web interface.  
+
+Engine Workflow
+Each project in the BIBINT is composed of three stages : 
+ - collection, handles the gathering of information from multiple sources (i.e. digital library, homepage)
+   A project has a collection of documents. 
+   Each document should have a detailed meta data. 
+   In order to get these metadata, a site handling is required. 
+   Site handling is not only required to access the data from the website but also to handle interaction with the site (i.e. searching for papers, authors, etc). 
+   Currently there are three forms of a data item that can be fed: raw html, Bibtex files, raw PDF. 
+
+ - analysis, applying analysis algorithm to the gathered data
+   this subsystem contains various algorithm that can be applied
+
+ - presentation, integrating various analysis as a single coherent information
+   most of the algorithm can not be produce output immediately so for efficient presentation, these result should be stored temporarily for later retrieval and display.
+
+Communication between the stages is to be stored in a pool handle that is shared among stages. 
+The pool handle can be used with storage subsystem that handles abstraction of interacting with underlying storage mechanism. 
+this subsystem should give consistent interface regardless of the implemented storage (filesystem, relational, RDF store, cloud storage, etc.)
+
+Web Interface Workflow for early version, the system is assumed to be operated by single user so no access control is required. 
+However, there should be a management that can handle multiple project. 
+Each project supposed to have separate repository. 
+The web interface is supposed to bridge interaction with the engine. 
+For simplicity, the interface should be done via command line. 

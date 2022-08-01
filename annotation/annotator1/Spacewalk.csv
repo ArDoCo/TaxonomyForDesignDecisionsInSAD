@@ -1,0 +1,46 @@
+sentence_number;design_decision;classification;alternative_classification
+1;0;-;-
+2;0;-;-
+3;1;architectural style;-
+4;1;user interface;component
+5;1;programming language;component
+6;0;-;-
+7;0;-;-
+8;1;data base;component
+9;0;-;-
+10;0;-;-
+11;0;-;-
+12;1;user interface;-
+13;1;user interface;platform
+14;1;programming language;-
+15;1;programming language;-
+16;1;programming language;-
+17;1;programming language;-
+18;1;programming language;-
+19;0;-;-
+20;1;interface;-
+21;1;api;-
+22;1;user interface;-
+23;1;user interface;-
+24;1;api;user interface
+25;1;programming language;platform
+26;1;architectural style;relation
+27;0;-;-
+28;0;-;-
+29;0;-;-
+30;1;interface;component
+31;0;-;-
+32;1;reference architecture;-
+33;0;-;-
+34;0;-;-
+35;1;platform;-
+36;1;programming language;-
+37;1;architectural pattern;-
+38;0;-;-
+39;1;architectural style;-
+40;0;-;-
+41;0;-;-
+42;1;function;-
+43;1;platform;-
+44;1;integration;programming language
+45;1;integration;data base
