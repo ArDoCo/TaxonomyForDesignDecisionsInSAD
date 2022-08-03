@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/520041723.svg)](https://zenodo.org/badge/latestdoi/520041723)
+
 # A Taxonomy for Design Decisions in Software Architecture Documentation
 This is the supplementary material repository of the paper "A Taxonomy for Design Decisions in Software Architecture Documentation".
 In this paper, we propose a taxonomy for design decisions in software architecture
