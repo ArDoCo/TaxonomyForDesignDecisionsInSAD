@@ -52,28 +52,29 @@ The following tables shows examples for the leaf classes.
 
 | Name                           | Example 
 |:-------------------------------|---------
-| Data file                      | The result is exported as CSV-file. 
-| Integration                    | Data is observed using Kotlin Flows and the Data Binding Library binds UI components to the data sources.  
-| Interface                      | his class defines a basic interface to receive a message, process it, and then immediately send it to any connected objects.
-| Component                      | The Common component contains utility code. 
-| Association                    | Objects might be linked with each-other via has_one and has_many relationships.
-| Class                          | The initial request is forwarded to the `WebPageServlet` class.
-| Inheritance                    | There are two general types of requests: user-invoked requests and automated requests.
-| Architectural Style            | The system is layered in two tiers: a web tier and a storage tier.  
-| Architectural Pattern          | We use Model-View-Viewmodel (MVVM) in the mobile application.
-| Relation                       | The viewmodel components access their corresponding model components to retrieve data.
-| Function                       | New identifiers are derived from a Temporary Exposure Key.
-| Algorithm                      | For signing, the Elliptic Curve Digital Signature Algorithm (ECDSA) is used.
-| Messaging                      | Identifiers are ID numbers sent out by the mobile phones.
-| Guideline                      | Where possible, open source libraries are used. 
-| Design Rule                    | If a user deletes and reinstalls the app, the stored registration token is lost. 
-| Organizational/Process-related | All changes to the API must be approved by the architecture team.
-| Tool                           | For instrumentation, valgrind is used.
-| Data base                      | The server stores the UUID into the database.
-| Platform                       | The system uses the Google App Engine (GAE) for deployment.
-| Programming Language           | The web UI is a mixture of perl as well as Java technologies. 
-| Framework                      | The Corona-Warn-App uses a new framework provided called Exposure Notification Framework.
-| User Interface                 | Users can scan the QR code.
+| data file                      | The result is exported as CSV-file. 
+| integration                    | Data is observed using Kotlin Flows and the Data Binding Library binds UI components to the data sources.  
+| interface                      | This class defines a basic interface to receive a message, process it, and then immediately send it to any connected objects.
+| component                      | The Common component contains utility code. 
+| association                    | Objects might be linked with each-other via has_one and has_many relationships.
+| class                          | The initial request is forwarded to the `WebPageServlet` class.
+| inheritance                    | There are two general types of requests: user-invoked requests and automated requests.
+| architectural style            | The system is layered in two tiers: a web tier and a storage tier.  
+| architectural pattern          | We use Model-View-Viewmodel (MVVM) in the mobile application.
+| reference architecture		 | The architecture follows the AUTOSAR architecture.
+| relation                       | The viewmodel components access their corresponding model components to retrieve data.
+| function                       | For example, a function could be used to invoke a common set of methods on a file, and called iteratively over an array of files.
+| algorithm                      | For signing, the Elliptic Curve Digital Signature Algorithm (ECDSA) is used.
+| messaging                      | Identifiers are ID numbers sent out by the mobile phones.
+| guideline                      | Where possible, open source libraries are used. 
+| design rule                    | Completely separate access control logic and execution logic.
+| organizational/process-related | All changes to the API must be approved by the architecture team.
+| tool                           | For instrumentation, valgrind is used.
+| data base                      | The server stores the UUID into the database.
+| platform                       | The system uses the Google App Engine (GAE) for deployment.
+| programming language           | The web UI is a mixture of perl as well as Java technologies. 
+| framework                      | The Corona-Warn-App uses a new framework provided called Exposure Notification Framework.
+| user interface                 | Users can scan the QR code.
 | API                            | The communication to the admin server is over HTTP.
 
 
